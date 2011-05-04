@@ -1,0 +1,54 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{amsmath, amsfonts, psfrag, fancyhdr, layout, appendix, subfig, listings}
+
+%\usepackage[T1]{fontenc}
+%\fontfamily{courier-ttf}\selectfont %Courier New\normalfont
+
+\definecolor{codefg}{RGB}{255,0,0}
+\definecolor{codebg}{RGB}{240, 255, 225}
+\definecolor{codecoment}{RGB}{0, 80, 0} 
+\definecolor{codekeyword}{RGB}{0, 68, 136}
+%\definecolor{codeindetif}{RGB}{0, 105, 155}
+
+%listing definition
+\lstset{
+	basicstyle=\tt\footnotesize, %estilo basico 
+	keywordstyle=\color{codekeyword}\bf\tt,
+	% underlined bold black keywords
+	identifierstyle=, %\color{codeindetif}, % color identificadores
+	commentstyle=\color{codecoment}, % comentarios
+	stringstyle=\ttfamily, % typewriter type for strings
+	showstringspaces=false,
+	frame=single\left, 
+	%rulesepcolor=\color{codefg},
+	backgroundcolor=\color{codebg},
+	language=Python, 
+	numbers=left, 
+	numberstyle=\footnotesize\tt,		%estilo numero linea
+	tabsize=4 					%tamaño tabulacion 
+}
+
+\author{Ricardo D. Quiroga - L2Radamanthys}
+
+
+%inicio documento
+\begin{document}
+
+
+\begin{lstlisting}
+class Hola():
+	def __init__(self):
+		self.casa = ""
+		self.hola =	87
+	
+	#hola mundo cruel
+	
+\end{lstlisting}
+
+
+\end{document}
